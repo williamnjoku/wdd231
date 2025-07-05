@@ -1,0 +1,219 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+}
+
+/* ..........header............. */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px ;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .75rem 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+.navigation li.current {
+    background-color: #eee;
+}
+.navigation a:hover {
+    background-color: orange;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+/* ..........Main............. */
+
+main h1 {
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+section {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+section h2 {
+    background-color: #222;
+    color: #fff;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.about-student {
+    display: block;
+}
+
+.about-student p {
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.student-photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.course-filters {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.course-filters button {
+    flex: 1 1 30%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #222;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.course-filters button:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+#course-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#course-cards div {
+    border: 1px solid #222;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.course-card.completed {
+  border-color: #3b873e;
+  background-color: #e8f5e9;
+}
+
+.course-card.not-completed {
+  border-color: #ccc;
+  background-color: #f9f9f9;
+}
+
+.course-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+.certificate-courses p {
+    text-align: center;
+}
+
+/* ..........Footer.......... */
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+.social img {
+    width: 22px;
+    height: 22px;
+}
+.social img:hover {
+    background-color: #ddd;
+}
