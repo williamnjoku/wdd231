@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Arewa Traders Ltd.",
+      "address": "12 Kawo Road, Kaduna",
+      "phone": "+234 801 123 4567",
+      "website": "https://arewatraders.com",
+      "image": "Business.jpg",
+      "level": 3
+    },
+    {
+      "name": "Zaria Tech Hub",
+      "address": "34 Zaria Crescent, Kaduna",
+      "phone": "+234 802 987 6543",
+      "website": "https://zariatechhub.com",
+      "image": "business.jpg",
+      "level": 2
+    },
+    {
+      "name": "Northern Agro Ltd.",
+      "address": "88 Ranch Road, Kaduna",
+      "phone": "+234 803 456 7890",
+      "website": "https://northernagro.com",
+      "image": "agro.jpg",
+      "level": 1
+    },
+    {
+      "name": "Kaduna Furniture Co.",
+      "address": "5 Independence Rd, Kaduna",
+      "phone": "+234 804 321 6789",
+      "website": "https://kadunafurniture.com",
+      "image": "furniture.jpg",
+      "level": 2
+    },
+    {
+      "name": "Sabo SuperMart",
+      "address": "21 Sabo Market Rd, Kaduna",
+      "phone": "+234 805 678 1234",
+      "website": "https://sabo-supermart.com",
+      "image": "supermart.jpg",
+      "level": 1
+    },
+    {
+      "name": "Giwa Logistics",
+      "address": "14 Transport Yard, Kaduna",
+      "phone": "+234 806 543 2109",
+      "website": "https://giwalogistics.com",
+      "image": "logistics.jpg",
+      "level": 3
+    },
+    {
+      "name": "Crocodile River Tours",
+      "address": "101 Riverbank Blvd, Kaduna",
+      "phone": "+234 807 654 3210",
+      "website": "https://crocodilerivertours.com",
+      "image": "crocriver.jpg",
+      "level": 2
+    }
+  ]
+}

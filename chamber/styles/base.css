@@ -1,0 +1,301 @@
+:root {
+  --primary-color: #005b4f;
+  --secondary-color: #f4c542;
+  --background-color: #ffffff;
+  --text-color: #222222;
+  --accent-color: #e67e22;
+  --font-family: 'Roboto', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* HEADER & NAVIGATION */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+header .branding {
+  display: flex;
+  align-items: center;
+}
+
+header .branding img {
+  margin-right: 0.5rem;
+  width: 90px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 1.2rem;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+nav.navigation {
+  display: none;
+}
+
+nav.navigation.show {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a.current {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
+nav a:hover {
+    background-color: darkslategray;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color);
+}
+
+main {
+    background-color: var(--secondary-color);
+}
+
+/* INFO PANELS */
+main h1 {
+    padding-left: 1rem;
+    padding-bottom: 0;
+}
+
+.info-panels {
+  padding: 1rem;
+  padding-bottom: 1rem;
+  
+}
+
+.info-panels p, a {
+    padding: 0.5rem;
+}
+
+.info-panels > div {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.info-panels h2 {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 1rem;
+    margin: 0;
+}
+
+.weather-current {
+  display: grid;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+.weather-current img {
+  width: 48px;
+  height: 48px;
+  margin-right: 0.5rem;
+}
+
+.forecast {
+    background-color: #fff;
+}
+
+.events {
+    background-color: #fff;
+}
+.forecast ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+}
+
+/* DIRECTORY SECTION */
+.directory-section {
+  padding: 1rem;
+}
+
+.directory-section h2 {
+    text-align: center;
+}
+
+.view-toggle {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.view-toggle button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-toggle button:hover {
+    background-color: #e67e22;
+}
+
+#directory-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+#directory-cards.grid-view {
+  grid-template-columns: 1fr;
+}
+
+#directory-cards.list-view {
+  grid-template-columns: 1fr;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  gap: 0.5rem;
+  border-radius: 4px;
+}
+
+.member-card img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.member-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.member-card p,
+.member-card a {
+  margin: 0.25rem 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-content section {
+  text-align: center;
+}
+
+.footer-content a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer-content .social a img {
+  transition: filter 0.3s ease;
+}
+
+.footer-content .social a:hover img {
+  filter: brightness(0) saturate(100%) invert(43%) sepia(85%) saturate(294%) hue-rotate(143deg) brightness(97%) contrast(93%);
+}
+
