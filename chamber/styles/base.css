@@ -136,8 +136,10 @@ main {
 
 /* INFO PANELS */
 main h1 {
-    padding-left: 1rem;
-    padding-bottom: 0;
+  padding-left: 1rem;
+  padding-bottom: 0;
+  margin: 0;
+
 }
 
 .info-panels {
