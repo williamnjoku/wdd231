@@ -10,7 +10,7 @@
     <meta property="og:type" content="website" />
     <meta name="description" content="Official website of the Kaduna Chamber of Commerce. Supporting local businesses, promoting events, and building a stronger community">
     <meta name="author" content="William Njoku">
-    <title>Chamber of Commerce Directory Page - William Njoku</title>
+    <title>Chamber of Commerce Home Page - William Njoku</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -18,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon1.ico">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -28,57 +29,54 @@
         </div>
         <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="current">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html" class="current">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
         <button id="ham-btn" class="hamburger" aria-label="name"></button>
     </header>
     <main>
-        <h1>Directory</h1>
+        <h1>Home</h1>
         <section class="hero">
           <img src="images/hero.jpg" alt="Kaduna cityscape or local market" class="responsive-hero">
           <div class="cta">
-            <a href="events.html" class="cta-button">Keynote Tickets</a>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
           </div>
         </section>
         <section class="info-panels">
-          <div class="events">
-            <h2>Events</h2>
-            <p>Check out upcoming events, workshops, and networking opportunities hosted by the Kaduna Chamber of Commerce. Stay connected and grow with the local business community.</p>
-            <a href="events.html" class="more-link">View Events Calendar</a>
-          </div>
-          <div class="weather">
-            <h2>Current Weather</h2>
-            <div class="weather-current">
-              <img src="images/cloud.svg" alt="Weather Icon">
-              <div class="weather-details">
-                <p><span id="current-temp">75°F</span> - Partly Cloudy</p>
-                <p>High: 85°F | Low: 52°F</p>
-                <p>Humidity: 34%</p>
-                <p>Sunrise: 7:30am | Sunset: 6:59pm</p>
-              </div>
-            </div>
-          </div>
-          <div class="forecast">
-            <h2>Weather Forecast</h2>
-            <ul>
-              <li>Today: <strong>90°F</strong></li>
-              <li>Wednesday: <strong>89°F</strong></li>
-              <li>Thursday: <strong>68°F</strong></li>
-            </ul>
-          </div>
-        </section>
-        <section class="directory-section">
-          <h2>Business Directory</h2>
-          <div class="view-toggle">
-            <button id="grid-btn">Grid View</button>
-            <button id="list-btn">List View</button>
-          </div>
-          <div id="directory-cards" class="grid-view">
-          </div>
+            <section class="events" id="events">
+              <h2>Upcoming Events</h2>
+              <ul>
+                <li><strong>July 24:</strong> Monthly Business Mixer</li>
+                <li><strong>August 10:</strong> Youth Entrepreneurship Workshop</li>
+                <li><strong>September 2:</strong> Digital Trade Expo</li>
+              </ul>
+            </section>
+
+            <section class="weather" id="weather">
+                <h2>Current Weather</h2>
+
+                <div class="weather-container">
+                  <p>The current weather in Kaduna State is: </p>
+                  <div class="current-weather">
+                    <img id="weather-icon" src="#" alt="" />
+                    <figcaption id="weather-desc"></figcaption>
+                    <div id="current-temp">Loading...</div>
+                  </div>
+                  <div class="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <ul id="forecast-list">
+                    </ul>
+                  </div>
+                </div>
+            </section>
+            <section class="spotlights">
+              <h2>Business Spotlights</h2>
+              <div class="spotlight-container"></div>
+            </section>
+
         </section>
     </main>
    <footer>
@@ -108,5 +106,6 @@
     </footer>
     <script src="scripts/navigation.js"></script>
     <script src="scripts/date.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

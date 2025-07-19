@@ -153,27 +153,14 @@ main h1 {
     padding: 0.5rem;
 }
 
-.info-panels > div {
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  padding: 0;
-  border-radius: 4px;
-}
-
 .info-panels h2 {
     background-color: #000;
     color: #fff;
-    padding: 1rem 1rem;
+    padding: 1rem 1rem ;
     margin: 0;
     border-radius: 4px;
 }
 
-.weather-current {
-  display: grid;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: #fff;
-}
 
 .weather-current img {
   width: 48px;
@@ -181,65 +168,17 @@ main h1 {
   margin-right: 0.5rem;
 }
 
-.forecast {
-    background-color: #fff;
+.forecast ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-evenly;
 }
 
 
-.weather, .spotlights, .events {
-  background-color: #fff;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 0;
-}
-
-
- .weather-container h3 {
-  text-align: center;
- }
-
-.weather-container .forecast #forecast-list {
-  margin: 0;
-  padding: 1rem;
-  list-style: none;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  max-width: max-content;
-}
-
-.weather-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 4px;
-}
-
-.spotlight-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-  gap: 0.5rem;
-  padding: 1rem;
-  max-width: 100%;
-  
-}
-
-.spotlight-card {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0.5rem;
-  background: white;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.spotlight-card img {
-  width: 100%;
-  max-height: 150px;
-  object-fit: contain;
-}
 
 /* DIRECTORY SECTION */
 .directory-section {
@@ -346,5 +285,3 @@ footer {
   filter: brightness(0) saturate(100%) invert(43%) sepia(85%) saturate(294%) hue-rotate(143deg) brightness(97%) contrast(93%);
 }
 
-
- 
