@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="William's Chamber of Commerce Site">
+    <meta property="og:description" content="Join the Kaduna Chamber of Commerce to grow your business, connect with the community, and stay informed.">
+    <meta property="og:image" content="https://williamnjoku.github.io/wdd231/chamber/images/kcc-logo.png">
+    <meta property="og:url" content="https://williamnjoku.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Membership application confirmation page">
+    <meta name="author" content="William Njoku">
+    <title>Chamber of Commerce Thank You Page - William Njoku</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon1.ico">
+    <script src="scripts/thankyou.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/kcc-logo.png" alt="Kaduna Chamber of Commerce Logo" width="50" height="50">
+            <h1>Kaduna Chamber of Commerce</h1>
+        </div>
+        <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+        <button id="ham-btn" class="hamburger" aria-label="name"></button>
+    </header>
+    <main>
+        <section class="thanks-panel">
+            <h1>Thank You!</h1>
+            <p>We’ve received your membership application. Here's what you submitted:</p>
+            <ul id="submitted-info"></ul>
+        </section>
+    </main>
+   <footer>
+        <div class="footer-content">
+          <section class="chamber-contact">
+            <h3>Kaduna Chamber of Commerce</h3>
+            <p>10 Independence Road, Kaduna, Nigeria</p>
+            <p>Email: <a href="info@kadunachamber.org">info@kadunachamber.org</a></p>
+            <p>Phone: <a href="+2348005551234">+234 800 555 1234</a></p>
+          </section>
+          <section class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="images/facebook.svg" alt="Facebook" width="48" height="48">
+            </a>
+            <a href="https://x.com/" target="_blank">
+              <img src="images/x.svg" alt="Twitter" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+          </section>
+          <section class="footer-meta">
+            <p>© <span id="currentyear"></span> Kaduna Chamber of Commerce | William Njoku</p>
+            <p id="lastModified"></p>
+          </section>
+        </div>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+</body>
+</html>
+
+
+
+

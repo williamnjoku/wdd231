@@ -36,9 +36,51 @@
     flex: 1;
   }
 
+  .thanks-panel {
+  padding: 1rem;
+  height: 652px;
+  align-content: center;
+  text-align: center;
+  }
+  .thanks-panel ul {
+    list-style: none;
+  }
+
   #directory-cards.grid-view {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
+
+  .form-and-cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .form-container {
+    display: grid;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+
+  .membership-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .membership-cards .card-grid h2 {
+  text-align: center;
+  }
+
+
+  .membership-cards .card-grid {
+    row-gap: 4rem;
+  }
+
 
   .footer-content {
     flex-direction: row;

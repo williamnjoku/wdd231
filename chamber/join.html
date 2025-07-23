@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="William's Chamber of Commerce Site">
+    <meta property="og:description" content="Join the Kaduna Chamber of Commerce to grow your business, connect with the community, and stay informed.">
+    <meta property="og:image" content="https://williamnjoku.github.io/wdd231/chamber/images/kcc-logo.png">
+    <meta property="og:url" content="https://williamnjoku.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Official website of the Kaduna Chamber of Commerce. Supporting local businesses, promoting events, and building a stronger community">
+    <meta name="author" content="William Njoku">
+    <title>Chamber of Commerce Join Page - William Njoku</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon1.ico">
+    <script type="module" src="scripts/join.js" ></script>
+
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/kcc-logo.png" alt="Kaduna Chamber of Commerce Logo" width="50" height="50">
+            <h1>Kaduna Chamber of Commerce</h1>
+        </div>
+        <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="current">Join</a></li>
+        </ul>
+    </nav>
+        <button id="ham-btn" class="hamburger" aria-label="name"></button>
+    </header>
+    <main>
+        <h1>Join the Chamber</h1>
+        <div class="form-and-cards">
+            <div class="form-only">
+                <h2>Membership Application Form</h2>
+                <form class= "form-container" method="get" action="thankyou.html">
+                    <label>
+                      First Name
+                      <input type="text" name="firstname" required title="Enter your first name" autocomplete="given-name" />
+                    </label>
+                    <label>
+                      Last Name
+                      <input type="text" name="lastname" required title="Enter your last name" autocomplete="family-name" />
+                    </label>
+                    <label>
+                      Organizational Title
+                      <input type="text" name="orgtitle" title="Your role in your organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+                    </label>
+                    <label>
+                      Email
+                      <input type="email" name="email" required title="Enter your email" autocomplete="email" placeholder="you@example.com" />
+                    </label>
+                    <label>
+                      Mobile Number
+                      <input type="tel" name="phone" required title="Enter your phone number" autocomplete="tel" />
+                    </label>
+                    <label>
+                      Organization Name
+                      <input type="text" name="organization" required title="Organization or business name" autocomplete="organization" />
+                    </label>
+                    <label>
+                      Membership Level
+                      <select name="membership">
+                        <option value="np">NP Membership (Free)</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                      </select>
+                    </label>
+                    <label>
+                      Business Description
+                      <textarea name="description" title="Brief description of your business"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp" />
+                    <input type="submit" value="Submit Membership Application" />
+                </form>
+            </div>
+            <div class="membership-cards">
+                <div class="card-grid">
+                  <h2>Membership Benefits</h2>
+                  <div class="card np" tabindex="0">
+                    <h3>NP Membership</h3>
+                    <a href="#np-modal">Learn More</a>
+                  </div>
+                  <div class="card bronze" tabindex="0">
+                    <h3>Bronze Membership</h3>
+                    <a href="#bronze-modal">Learn More</a>
+                  </div>
+                  <div class="card silver" tabindex="0">
+                    <h3>Silver Membership</h3>
+                    <a href="#silver-modal">Learn More</a>
+                  </div>
+                  <div class="card gold" tabindex="0">
+                    <h3>Gold Membership</h3>
+                    <a href="#gold-modal">Learn More</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <dialog id="np-modal">
+            <h2>NP Membership Benefits</h2>
+            <p>No fee. Access to public newsletters and free events.</p>
+            <button onclick="document.getElementById('np-modal').close()">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+          <h2>Bronze Membership Benefits</h2>
+          <p>Includes NP benefits plus early event access, networking meetups.</p>
+          <button onclick="document.getElementById('bronze-modal').close()">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+          <h2>Silver Membership Benefits</h2>
+          <p>Includes Bronze benefits + spotlight advertising, business listing.</p>
+          <button onclick="document.getElementById('silver-modal').close()">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+          <h2>Gold Membership Benefits</h2>
+          <p>Includes Silver benefits + VIP events, premium ads, featured homepage position.</p>
+          <button onclick="document.getElementById('gold-modal').close()">Close</button>
+        </dialog>
+    </main>
+   <footer>
+        <div class="footer-content">
+          <section class="chamber-contact">
+            <h3>Kaduna Chamber of Commerce</h3>
+            <p>10 Independence Road, Kaduna, Nigeria</p>
+            <p>Email: <a href="info@kadunachamber.org">info@kadunachamber.org</a></p>
+            <p>Phone: <a href="+2348005551234">+234 800 555 1234</a></p>
+          </section>
+          <section class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="images/facebook.svg" alt="Facebook" width="48" height="48">
+            </a>
+            <a href="https://x.com/" target="_blank">
+              <img src="images/x.svg" alt="Twitter" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+          </section>
+          <section class="footer-meta">
+            <p>© <span id="currentyear"></span> Kaduna Chamber of Commerce | William Njoku</p>
+            <p id="lastModified"></p>
+          </section>
+        </div>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

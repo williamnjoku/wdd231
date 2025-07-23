@@ -142,6 +142,12 @@ main h1 {
 
 }
 
+.thanks-panel {
+  padding: 1rem;
+  height: 480px;
+  align-content: center;
+}
+
 .info-panels {
   padding: 1rem;
   padding-bottom: 1rem;
@@ -185,7 +191,6 @@ main h1 {
     background-color: #fff;
 }
 
-
 .weather, .spotlights, .events {
   background-color: #fff;
   margin-bottom: 1rem;
@@ -194,10 +199,9 @@ main h1 {
   padding: 0;
 }
 
-
- .weather-container h3 {
+.weather-container h3 {
   text-align: center;
- }
+}
 
 .weather-container .forecast #forecast-list {
   margin: 0;
@@ -247,7 +251,7 @@ main h1 {
 }
 
 .directory-section h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .view-toggle {
@@ -313,6 +317,118 @@ main h1 {
 .member-card p,
 .member-card a {
   margin: 0.25rem 0;
+}
+.form-container {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.form-container label {
+  display: block;
+  font-weight: bold;
+  color: #222;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container select,
+.form-container textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  border: none;
+  border-left: 5px solid #000; 
+  border-radius: 4px;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="tel"]:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 91, 79, 0.4);
+}
+
+.form-container input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: var(--accent-color);
+}
+
+.membership-cards .card-grid {
+  display: grid;
+  gap: 1rem;
+  animation: fadeInCards 1s ease-in-out;
+  text-align: center;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.membership-cards a:hover {
+  color: var(--accent-color);
+}
+.membership-cards .card-grid h2 {
+  text-align: left;
+}
+
+.form-only h2 {
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+@keyframes fadeInCards {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+dialog {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 400px;
 }
 
 /* FOOTER */
