@@ -1,0 +1,47 @@
+
+:root {
+  --primary-blue: #005b96;
+  --light-bg: #FFFEEF;
+  --text-color: #222222;
+  --highlight-blue: #6495ED;
+  --footer-blue: #002147;
+  --font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  color: var(--primary-blue);
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+footer {
+  background-color: var(--footer-blue);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
