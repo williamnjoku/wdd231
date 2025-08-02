@@ -10,16 +10,18 @@
     <meta property="og:type" content="website" />
     <meta name="description" content="Official website of the Kaduna Chamber of Commerce. Supporting local businesses, promoting events, and building a stronger community">
     <meta name="author" content="William Njoku">
-    <title>Chamber of Commerce Directory Page - William Njoku</title>
+    <title>Chamber of Commerce Discover Page - William Njoku</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon1.ico">
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/visit.js" defer></script>
+    <script type="module" src="scripts/discover.js" ></script>
+    <link rel="preload" as="image" href="images/kamuku.webp" type="image/webp">
+
 </head>
 <body>
     <header>
@@ -29,58 +31,19 @@
         </div>
         <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html" class="current">Directory</a></li>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="discover.html" class="current">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
         <button id="ham-btn" class="hamburger" aria-label="name"></button>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div id="visit-message" class="visit-message"></div>
-        <section class="hero">
-          <img src="images/hero.jpg" alt="Kaduna cityscape or local market" class="responsive-hero">
-          <div class="cta">
-            <a href="events.html" class="cta-button">Keynote Tickets</a>
-          </div>
-        </section>
-        <section class="info-panels">
-          <div class="events">
-            <h2>Events</h2>
-            <p>Check out upcoming events, workshops, and networking opportunities hosted by the Kaduna Chamber of Commerce. Stay connected and grow with the local business community.</p>
-            <a href="events.html" class="more-link">View Events Calendar</a>
-          </div>
-          <div class="weather">
-            <h2>Current Weather</h2>
-            <div class="weather-current">
-              <img src="images/cloud.svg" alt="Weather Icon">
-              <div class="weather-details">
-                <p><span id="current-temp">75°F</span> - Partly Cloudy</p>
-                <p>High: 85°F | Low: 52°F</p>
-                <p>Humidity: 34%</p>
-                <p>Sunrise: 7:30am | Sunset: 6:59pm</p>
-              </div>
-            </div>
-          </div>
-          <div class="forecast">
-            <h2>Weather Forecast</h2>
-            <ul>
-              <li>Today: <strong>90°F</strong></li>
-              <li>Wednesday: <strong>89°F</strong></li>
-              <li>Thursday: <strong>68°F</strong></li>
-            </ul>
-          </div>
-        </section>
-        <section class="directory-section">
-          <h2>Business Directory</h2>
-          <div class="view-toggle">
-            <button id="grid-btn">Grid View</button>
-            <button id="list-btn">List View</button>
-          </div>
-          <div id="directory-cards" class="grid-view">
-          </div>
+        <h1>Discover</h1>
+        <section class="discover-cards-container">
+            <div id="visit-message" class="visit-message"></div>
+            <div id="discover-cards"></div>
         </section>
     </main>
    <footer>
@@ -110,5 +73,6 @@
     </footer>
     <script src="scripts/navigation.js"></script>
     <script src="scripts/date.js"></script>
+    <script src="scripts/visit.js" ></script>
 </body>
 </html>

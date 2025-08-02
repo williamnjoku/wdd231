@@ -1,0 +1,1 @@
+@media (min-width:641px){.discover-card{grid-template-columns:1fr 2fr;grid-template-areas:"image title" "image address" "image description" "image cost" "image button"}.discover-card figure img{height:100%;object-fit:cover}.discover-card figure img:hover{transform:scale(1.05);box-shadow:0 0 10px rgba(0,0,0,.3);cursor:pointer}}

@@ -134,6 +134,18 @@ main {
     background-color: var(--secondary-color);
 }
 
+.visit-message {
+  
+  background-color: var(--background-color);
+  color: #000;
+  padding: 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+  border-left: 6px solid var(--primary-color);
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+
+}
 /* INFO PANELS */
 main h1 {
   padding-left: 1rem;
@@ -244,6 +256,72 @@ main h1 {
   max-height: 150px;
   object-fit: contain;
 }
+
+/* DISCOVER SECTION */
+
+.discover-cards-container div {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  
+}
+
+.discover-card {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "address"
+    "description"
+    "cost"
+    "button";
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  max-height: fit-content;
+}
+
+.discover-card h2 {
+  grid-area: title;
+  margin: 0;
+}
+
+.discover-card figure {
+  grid-area: image;
+  margin: 0;
+}
+
+.discover-card figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.discover-card address {
+  grid-area: address;
+  font-style: normal;
+}
+
+.discover-card p:first-of-type {
+  grid-area: description;
+}
+
+.discover-card p:last-of-type {
+  grid-area: cost;
+}
+
+.discover-card button {
+  grid-area: button;
+  padding: 0.5rem 1rem;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 
 /* DIRECTORY SECTION */
 .directory-section {
