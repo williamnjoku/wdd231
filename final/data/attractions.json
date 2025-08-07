@@ -1,0 +1,19 @@
+{
+  "attractions": [
+    {
+      "name": "Lekki Conservation Centre",
+      "address": "KM 19 Lekki-Epe Expressway, Lagos",
+      "image": "images/lekkicentre.webp"
+    },
+    {
+      "name": "Nike Art Gallery",
+      "address": "No. 2, Elegushi Rd, Lekki Phase I, Lagos",
+      "image": "images/nikeart.webp"
+    },
+    {
+      "name": "Tarkwa Bay Beach",
+      "address": "Tarkwa Bay Island, Lagos",
+      "image": "images/tarkwabay.webp"
+    }
+  ]
+}

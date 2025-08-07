@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Explore Lagos | Travel Guide" />
+    <meta property="og:description" content="Your ultimate Lagos travel guide — explore must-see attractions, get insider tips, and check the weather!" />
+    <meta property="og:image" content="https://williamnjoku.github.io/wdd231/final/images/logo.png">
+    <meta property="og:url" content="https://williamnjoku.github.io/wdd231/final/directory.html">
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Explore Lagos with this travel guide. Discover top attractions in the Visit Places Page" />
+    <meta name="author" content="William Njoku">
+    <title>Lagos Travel Guide Visit Places Page | William Njoku</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/visit.js" defer></script>
+    <script type="module" src="scripts/places.js"></script>
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Lagos Travel Guide Logo" width="90" height="90">
+            <h1>Lagos Travel Guide</h1>
+        </div>
+        <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html" class="current">Visit Places</a></li>
+            <li><a href="form.html">Plan Visit</a></li>        
+        </ul>
+    </nav>
+        <button id="ham-btn" class="hamburger" aria-label="name"></button>
+    </header>
+    <main>
+        <h1>Places To Visit</h1>
+        <div id="visit-message" class="visit-message"></div>
+        <section class="places-filter">
+            <button data-category="All">All</button>
+            <button data-category="Art & Culture">Art & Culture</button>
+            <button data-category="Nature">Nature</button>
+            <button data-category="Cultural Center">Cultural Center</button>
+            <button data-category="History">History</button>
+            <button data-category="Beach">Beach</button>
+            <button data-category="Modern">Modern</button>
+            <button data-category="Performance">Performance</button>
+            <button data-category="Resort">Resort</button>
+        <section>
+        <section class="places-grid" id="places-container">
+        </section>   
+    </main>
+   <footer>
+        <div class="footer-content">
+          <section class="contact">
+            <h3>Lagos Travel Guide</h3>
+            <p>Plot 12, Marina Street, Lagos, Nigeria</p>
+            <p>Email: <a href="mailto:info@lagostravel.org">info@lagostravel.org</a></p>
+            <p>Phone: <a href="tel:+2348000000000">+234 800 000 0000</a></p>
+          </section>
+          <section class="social">
+            <a href="https://facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="48" height="48" /></a>
+            <a href="https://x.com/" target="_blank"><img src="images/x.svg" alt="X (Twitter)" width="48" height="48" /></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48" /></a>
+          </section>
+          <section class="footer-meta">
+            <p>© <span id="currentyear"></span> Lagos Travel Guide | William Njoku</p>
+            <p id="lastModified"></p>
+          </section>
+        </div>
+        <a class="video" href="https://www.loom.com/share/b7ff792e9c4244bd81098d51fa70a525?sid=5a7ccffb-47fc-4dec-a75f-921590f86efa">Video Link</a>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+</body>
+</html>

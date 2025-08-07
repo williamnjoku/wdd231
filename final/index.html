@@ -1,68 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Plan - Travel Guide to Lagos</title>
-  <link rel="stylesheet" href="styles/base.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Explore Lagos | Travel Guide" />
+    <meta property="og:description" content="Your ultimate Lagos travel guide — explore must-see attractions, get insider tips, and check the weather!" />
+    <meta property="og:image" content="https://williamnjoku.github.io/wdd231/final/images/logo.png">
+    <meta property="og:url" content="https://williamnjoku.github.io/wdd231/final/directory.html">
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Explore Lagos with this travel guide. Discover top attractions, travel tips, and local weather updates." />
+    <meta name="author" content="William Njoku">
+    <title>Lagos Travel Guide Home Page | William Njoku</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/attractions.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Site Plan: Travel Guide to Lagos, Nigeria</h1>
-  </header>
-
-  <main>
-    <section>
-      <h2>Site Name</h2>
-      <p><strong>Travel Lagos Guide</strong></p>
-      <p>This name captures the purpose of the site, helping people explore Lagos. It’s simple, relevant, and memorable.</p>
-    </section>
-
-    <section>
-      <h2>Site Purpose</h2>
-      <p>The site serves as an informative and visually engaging travel guide to Lagos, Nigeria. It will provide recommendations on places to visit, travel tips, and dynamic features like a weather forecast and interactive image gallery.</p>
-    </section>
-
-    <section>
-      <h2>Scenarios</h2>
-      <ul>
-        <li>What are the top tourist attractions I can visit in Lagos?</li>
-        <li>Is it safe to travel to Lagos and how do I get around the city?</li>
-        <li>What should I eat and where can I find good, affordable accommodation?</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Color Schema</h2>
-      <ul>
-        <li><strong>Primary Color:</strong> #005b96 – Used for headers, CTA buttons, and navbar background.</li>
-        <li><strong>Accent Color:</strong> #6495ED – Used for highlights, icons, section backgrounds.</li>
-        <li><strong>Text Color:</strong> #222222 – Used for all paragraph and general content text.</li>
-        <li><strong>Background Color:</strong> #FFFEEF – Used for body and card backgrounds.</li>
-        <li><strong>Footer Color:</strong> #002147 – Used for the footer.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Typography</h2>
-      <ul>
-        <li><strong>Roboto:</strong> Used for body text and paragraph content for readability.</li>
-        <li><strong>Roboto Bold (700):</strong> Used for headings, section titles, and callouts.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Wireframe</h2>
-      <img src="images/desktopwireframe.png" alt="Desktop wireframe " width="500" />
-      <img src="images/mobilewireframe.png" alt="Mobile wireframe " width="250" />
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Travel Guide to Lagos | Site Plan by William Njoku</p>
-  </footer>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Lagos Travel Guide Logo" width="90" height="90">
+            <h1>Lagos Travel Guide</h1>
+        </div>
+        <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="places.html">Visit Places</a></li>
+            <li><a href="form.html">Plan Visit</a></li>        
+        </ul>
+    </nav>
+        <button id="ham-btn" class="hamburger" aria-label="name"></button>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="visit-message" class="visit-message"></div>
+        <section class="hero">
+          <img src="images/lagoshero.webp" alt="A scenic view of Lagos city" class="responsive-hero">
+          <div class="cta">
+            <a href="places.html" class="cta-button">Explore Attractions</a>
+          </div>
+        </section>
+        <section class="info-panels">
+            <section class="attractions" id="attractions-section">
+              <div id="attractions-cards" class="attraction-card-container"></div>
+            </section>
+            <section class="tips">
+              <h2>Travel Tips</h2>
+              <ul>
+                <li>Pack light clothing,</li>
+                <li>Bring cash for local markets,</li>
+                <li>Avoid rush hour traffic when possible...</li>
+              </ul>
+                <a href="#" id="more-tips-link">See More tips</a>
+            </section>
+            <dialog id="tips-dialog" aria-labelledby="modal-title">
+                <form method="dialog" class="dialog-form">
+                   <h2 id="modal-title">More Travel Tips</h2>
+                   <ul>
+                     <li>Keep emergency contacts handy.</li>
+                     <li>Use sunscreen when outdoors.</li>
+                     <li>Download offline maps.</li>
+                     <li>Keep your ID/passport safe.</li>
+                     <li>Respect photography restrictions.</li>
+                     <li>Dress appropriately for cultural/religious sites.</li>
+                     <li>Carry a basic first aid kit.</li>
+                     <li>Use registered transport services.</li>
+                     <li>Be aware of local scams.</li>
+                     <li>Don’t flash valuables.</li>
+                     <li>Try local food, but be cautious with street vendors.</li>
+                   </ul>
+                   <button id="close-dialog" class="cta-button">Close</button>
+                </form>
+            </dialog>
+            <section class="weather" id="weather">
+                <h2>Weather Forecast</h2>
+                <div class="weather-container">
+                  <p>Current weather in Lagos State:</p>
+                  <div class="current-weather">
+                    <img id="weather-icon" src="#" alt="" />
+                    <figcaption id="weather-desc"></figcaption>
+                    <div id="current-temp">Loading...</div>
+                  </div>
+                  <div class="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <ul id="forecast-list">
+                    </ul>
+                  </div>
+                </div>
+            </section>
+        </section>
+    </main>
+   <footer>
+        <div class="footer-content">
+          <section class="contact">
+            <h3>Lagos Travel Guide</h3>
+            <p>Plot 12, Marina Street, Lagos, Nigeria</p>
+            <p>Email: <a href="mailto:info@lagostravel.org">info@lagostravel.org</a></p>
+            <p>Phone: <a href="tel:+2348000000000">+234 800 000 0000</a></p>
+          </section>
+          <section class="social">
+            <a href="https://facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="48" height="48" /></a>
+            <a href="https://x.com/" target="_blank"><img src="images/x.svg" alt="X (Twitter)" width="48" height="48" /></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48" /></a>
+          </section>
+          <section class="footer-meta">
+            <p>© <span id="currentyear"></span> Lagos Travel Guide | William Njoku</p>
+            <p id="lastModified"></p>
+          </section>
+        </div>
+        <a class="video" href="https://www.loom.com/share/b7ff792e9c4244bd81098d51fa70a525?sid=5a7ccffb-47fc-4dec-a75f-921590f86efa">Video Link</a>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

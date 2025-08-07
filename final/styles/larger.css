@@ -1,0 +1,54 @@
+@media (min-width: 768px) {
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  nav.navigation {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  nav a {
+    padding: 0.75rem 1.5rem;
+  }
+  .info-panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .attractions {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .attraction-card-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .places-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
